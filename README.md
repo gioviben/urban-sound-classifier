@@ -1,4 +1,5 @@
 # Urban Sound Classifier
+
 AI-based system for **acoustic classification of road traffic sounds**, built as the project S8.
 
 ---
@@ -9,7 +10,7 @@ Road traffic noise is a major environmental and public health issue.
 This project aims to build a **Python-based AI prototype** capable of:
 
 * Classifying road noise sources from audio recordings
-* Working with real-world data (urban environment)
+* Working with real-world data in urban environments
 
 ---
 
@@ -17,27 +18,20 @@ This project aims to build a **Python-based AI prototype** capable of:
 
 The pipeline follows these main steps:
 
-1. **Data Collection** (Other team)
+1. **Data Collection**  
+   Audio recordings collected using Raspberry Pi and microphone.
 
-   * Audio recordings (Raspberry Pi + microphone) 
+2. **Preprocessing & Segmentation**  
+   Audio cleaning and event-based segmentation.
 
-2. **Preprocessing & Segmentation**
+3. **Feature Extraction**  
+   Extraction of audio features such as MFCCs and spectrograms.
 
-   * Audio cleaning
-   * Event-based segmentation
+4. **Modeling**  
+   Machine Learning and Deep Learning models for sound classification.
 
-3. **Feature Extraction**
-
-   * MFCCs
-   * Spectrograms
-
-4. **Modeling**
-
-   * Machine Learning / Deep Learning models (CNN/LSTM)
-
-5. **Evaluation**
-
-   * Validation on real-world data
+5. **Evaluation**  
+   Validation of the model on real-world traffic sound data.
 
 ---
 
@@ -57,19 +51,39 @@ Classes include:
 * Siren
 * Dog
 * Construction
-* (and others)
+* and others
 
 ---
 
-## Repository Structure (basic)
+## Repository Structure
 
-```
+The repository is organized into three main folders:
+
+```text
 .
-├── Vehicle_Audio_Classifier_V12.ipynb   # Main notebook (latest solution)
-├── data/                                # Datasets (not included)
-├── models/                              # Saved models (optional)
+├── data/                     # Datasets used for training and testing
+├── current-model/             # Current and presented solution
+│   └── Vehicle_Audio_Classifier_V12.ipynb
+├── R&D-Improvements/          # Alternative experimental version with a different approach
+├── requirements.txt           # Python dependencies
 └── README.md
 ```
+
+### Folders Description
+
+* **data/**  
+  Contains the datasets used in the project, such as IDMT Traffic, Melaudis, and UrbanSound8K.  
+  The datasets are not included in the repository due to size constraints.
+
+* **current-model/**  
+  Contains the current version of the solution presented for the project.  
+  This is the main implementation of the Urban Sound Classifier.
+
+* **R&D-Improvements/**  
+  Contains an alternative research and development version of the project, based on a different approach that achieved very promising results.
+
+* **requirements.txt**  
+  Contains the Python libraries required to run the project.
 
 ---
 
@@ -77,7 +91,7 @@ Classes include:
 
 This repository replaces an earlier version of the project.
 
-👉 Previous repository:
+Previous repository:  
 [Project_S8](https://github.com/gioviben/Project_S8)
 
 ---
