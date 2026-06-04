@@ -264,12 +264,12 @@ The UrbanSound8K filtered directory must already be split into `train/val/test` 
 ```bash
 # 1. Place source databases in data/ (see Data sources above)
 # 2. Run notebooks in order:
-jupyter notebook 01_data_exploration.ipynb        # exploration only, no files written
-jupyter notebook 02_segmentation_pipeline.ipynb   # ~10 min
-jupyter notebook 03_feature_extraction.ipynb      # ~15 min
-jupyter notebook 04_dataset_dataloader.ipynb      # ~5 min
-jupyter notebook 05_model_training.ipynb          # ~30–60 min (CPU)
-jupyter notebook 06_24h_acoustic_analysis.ipynb   # requires field recordings
+jupyter notebook 01_data_exploration.ipynb        # ~7 min
+jupyter notebook 02_segmentation_pipeline.ipynb   # ~4 min
+jupyter notebook 03_feature_extraction.ipynb      # ~7 min
+jupyter notebook 04_dataset_dataloader.ipynb      # ~4 min
+jupyter notebook 05_model_training.ipynb          # ~1h 20 min (CPU)
+jupyter notebook 06_24h_acoustic_analysis.ipynb   # ~5 h
 ```
 
 ### Option B: Skip to training (segments and features already computed)
