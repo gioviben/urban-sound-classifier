@@ -2,7 +2,7 @@
 
 AI-based end-to-end pipeline for the acoustic classification of road traffic sounds and urban events, developed as part of Project S8 (Pôle Projets).
 
-The system analyzes real-world recordings and distinguishes 10 classes of road traffic sounds and acoustic events using a lightweight 2D CNN trained on log-mel spectrograms.
+The system analyzes real-world recordings and distinguishes 10 classes of road traffic sounds and acoustic events using a lightweight 2D CNN trained on log-mel spectrograms. 
 
 ---
 
